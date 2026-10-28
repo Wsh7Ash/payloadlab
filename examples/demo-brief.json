@@ -1,0 +1,13 @@
+{
+  "title": "Reflected input observed in an attribute context",
+  "context": "html-attribute reflected search parameter on a member-only page",
+  "weakness": "CWE-79 improper neutralization of input during web page generation",
+  "constraints": [
+    "authorized-scope only",
+    "no state changes",
+    "marker must survive encoding",
+    "read-only evidence",
+    "field length limit 250"
+  ],
+  "tags": ["xss", "reflection", "input-validation", "evidence"]
+}

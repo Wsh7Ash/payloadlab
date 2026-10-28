@@ -1,0 +1,611 @@
+{
+  "name": "payloadlab",
+  "version": "1.0.0",
+  "category": "defensive-security",
+  "license": "MIT",
+  "runtime": "Claude Code, opencode, or any agent runtime that loads SKILL.md files",
+  "description": "50 validated proof-of-concept authoring skills for authorized testing: scope and hypothesis discipline, minimal proof craft, controlled delivery, auditable observation and evidence-backed reporting, with a brief-to-runbook CLI.",
+  "skill_count": 50,
+  "skills": [
+    {
+      "slug": "authorization-boundary-check",
+      "title": "Authorization Boundary Check",
+      "path": "skills/authorization-boundary-check/SKILL.md",
+      "tags": [
+        "authorization",
+        "scope",
+        "safety"
+      ],
+      "meta_phase": "scope",
+      "sha256": "cb814bf52cf1ff6ac91f1aa27c17e04ae0ae9922ef4baf5b958f182ddd8d5a80"
+    },
+    {
+      "slug": "test-identity-provisioning",
+      "title": "Test Identity Provisioning",
+      "path": "skills/test-identity-provisioning/SKILL.md",
+      "tags": [
+        "setup",
+        "test-data",
+        "safety"
+      ],
+      "meta_phase": "scope",
+      "sha256": "11a6f02a364c04b62752aa1b495a3e909d579d5e7c06b06a1c87870afbaff80b"
+    },
+    {
+      "slug": "blast-radius-budget",
+      "title": "Blast Radius Budget",
+      "path": "skills/blast-radius-budget/SKILL.md",
+      "tags": [
+        "safety",
+        "planning",
+        "scope"
+      ],
+      "meta_phase": "scope",
+      "sha256": "4de84f41f55514d196db6738b8fae3241a65e519770ff03a6d74330aef5e69bc"
+    },
+    {
+      "slug": "test-data-selection-discipline",
+      "title": "Test Data Selection Discipline",
+      "path": "skills/test-data-selection-discipline/SKILL.md",
+      "tags": [
+        "test-data",
+        "safety",
+        "setup"
+      ],
+      "meta_phase": "scope",
+      "sha256": "301ab0663921fdff872e97cb8cedd9c914b6b089ce4229c3cc6b6edb8e63fbaf"
+    },
+    {
+      "slug": "environment-choice-staging-or-prod",
+      "title": "Environment Choice Staging or Prod",
+      "path": "skills/environment-choice-staging-or-prod/SKILL.md",
+      "tags": [
+        "environment",
+        "safety",
+        "planning"
+      ],
+      "meta_phase": "scope",
+      "sha256": "960666c847b8a9cf939d8d61e0f2f013b836cba5c599602382d2b938ef88d632"
+    },
+    {
+      "slug": "abort-criteria-and-kill-switch",
+      "title": "Abort Criteria and Kill Switch",
+      "path": "skills/abort-criteria-and-kill-switch/SKILL.md",
+      "tags": [
+        "safety",
+        "planning",
+        "sre"
+      ],
+      "meta_phase": "scope",
+      "sha256": "5e07bddf205ede6c5767b5d1cc362de87f38b5eff3af4ac50408498eb9626fb1"
+    },
+    {
+      "slug": "scope-record-keeping",
+      "title": "Scope Record Keeping",
+      "path": "skills/scope-record-keeping/SKILL.md",
+      "tags": [
+        "records",
+        "scope",
+        "process"
+      ],
+      "meta_phase": "scope",
+      "sha256": "e3f55a4de5e3d9201ab7135605a6b88c573fdab274a146ebd1ed6a131ca9f762"
+    },
+    {
+      "slug": "non-destructive-test-design",
+      "title": "Non Destructive Test Design",
+      "path": "skills/non-destructive-test-design/SKILL.md",
+      "tags": [
+        "safety",
+        "design",
+        "evidence"
+      ],
+      "meta_phase": "scope",
+      "sha256": "241f356365ecdb234c37b93ee5367a90eef9efbf381e3de63b602ac0023a8f3d"
+    },
+    {
+      "slug": "weakness-hypothesis-statement",
+      "title": "Weakness Hypothesis Statement",
+      "path": "skills/weakness-hypothesis-statement/SKILL.md",
+      "tags": [
+        "hypothesis",
+        "design",
+        "rigor"
+      ],
+      "meta_phase": "hypothesis",
+      "sha256": "2220890d0ede822c04e2960f4ce2e7871ab63fa42f52742206478cf499c55832"
+    },
+    {
+      "slug": "expected-behavior-baseline",
+      "title": "Expected Behavior Baseline",
+      "path": "skills/expected-behavior-baseline/SKILL.md",
+      "tags": [
+        "baseline",
+        "hypothesis",
+        "evidence"
+      ],
+      "meta_phase": "hypothesis",
+      "sha256": "80ffac40f1e99b93afc688136bda0ab5fa129bea0feddd136d31102dee2de3e8"
+    },
+    {
+      "slug": "input-surface-inventory",
+      "title": "Input Surface Inventory",
+      "path": "skills/input-surface-inventory/SKILL.md",
+      "tags": [
+        "inventory",
+        "hypothesis",
+        "recon"
+      ],
+      "meta_phase": "hypothesis",
+      "sha256": "00af299c5b297bae93bc33610e113b9483744a2847c5e906610465ed86844836"
+    },
+    {
+      "slug": "sink-context-classification",
+      "title": "Sink Context Classification",
+      "path": "skills/sink-context-classification/SKILL.md",
+      "tags": [
+        "context",
+        "hypothesis",
+        "encoding"
+      ],
+      "meta_phase": "hypothesis",
+      "sha256": "b57205faca582976a4da1ce4d305fe7505469c4284e31abf1d82ea4ddb2f1f1b"
+    },
+    {
+      "slug": "precondition-enumeration",
+      "title": "Precondition Enumeration",
+      "path": "skills/precondition-enumeration/SKILL.md",
+      "tags": [
+        "setup",
+        "hypothesis",
+        "reproduction"
+      ],
+      "meta_phase": "hypothesis",
+      "sha256": "547d522df5b69ea79981799444468ee7665e25203f3117e2dd1aafdac2587c50"
+    },
+    {
+      "slug": "success-criteria-definition",
+      "title": "Success Criteria Definition",
+      "path": "skills/success-criteria-definition/SKILL.md",
+      "tags": [
+        "hypothesis",
+        "rigor",
+        "planning"
+      ],
+      "meta_phase": "hypothesis",
+      "sha256": "8ea3176b055c1e01343d6278556466d667ef528b59aaec618b549c906c24c7cd"
+    },
+    {
+      "slug": "rival-explanation-elimination",
+      "title": "Rival Explanation Elimination",
+      "path": "skills/rival-explanation-elimination/SKILL.md",
+      "tags": [
+        "rigor",
+        "hypothesis",
+        "validation"
+      ],
+      "meta_phase": "hypothesis",
+      "sha256": "1c44b6a241d59a13e516cb5e9da86a566ca567505a8cd9df79eb266129eb19ae"
+    },
+    {
+      "slug": "variable-isolation-design",
+      "title": "Variable Isolation Design",
+      "path": "skills/variable-isolation-design/SKILL.md",
+      "tags": [
+        "rigor",
+        "design",
+        "evidence"
+      ],
+      "meta_phase": "hypothesis",
+      "sha256": "ed2c505859c7791754a6902ec30489be08227cc174670a9b244ffd671fe30045"
+    },
+    {
+      "slug": "marker-payload-design",
+      "title": "Marker Payload Design",
+      "path": "skills/marker-payload-design/SKILL.md",
+      "tags": [
+        "craft",
+        "markers",
+        "evidence"
+      ],
+      "meta_phase": "craft",
+      "sha256": "1b684466a7d6cf943122de4ca9bc2b3a2df4057d92ce7ce70e1e13dad73788f0"
+    },
+    {
+      "slug": "benign-proof-technique-selection",
+      "title": "Benign Proof Technique Selection",
+      "path": "skills/benign-proof-technique-selection/SKILL.md",
+      "tags": [
+        "craft",
+        "safety",
+        "design"
+      ],
+      "meta_phase": "craft",
+      "sha256": "476f657702dc479da04aeb430fe1099cdf77ed12eafebaf4a678f449c2bf7ba0"
+    },
+    {
+      "slug": "minimal-change-iteration",
+      "title": "Minimal Change Iteration",
+      "path": "skills/minimal-change-iteration/SKILL.md",
+      "tags": [
+        "craft",
+        "rigor",
+        "iteration"
+      ],
+      "meta_phase": "craft",
+      "sha256": "d006386596f169ec1d855291fb9f3ee03c8cdc81585724a8fa10eae68fdb5c70"
+    },
+    {
+      "slug": "encoding-layer-awareness",
+      "title": "Encoding Layer Awareness",
+      "path": "skills/encoding-layer-awareness/SKILL.md",
+      "tags": [
+        "encoding",
+        "craft",
+        "context"
+      ],
+      "meta_phase": "craft",
+      "sha256": "e6532b2e24fcdab10573386b5a3287bc3a42c438e76a683ae05235caff31f2a7"
+    },
+    {
+      "slug": "context-delimiter-selection",
+      "title": "Context Delimiter Selection",
+      "path": "skills/context-delimiter-selection/SKILL.md",
+      "tags": [
+        "craft",
+        "context",
+        "encoding"
+      ],
+      "meta_phase": "craft",
+      "sha256": "b9145a16a9908e062938b536e044d20d862109bc30d6c7af8b1aeedd441b96d5"
+    },
+    {
+      "slug": "payload-length-discipline",
+      "title": "Payload Length Discipline",
+      "path": "skills/payload-length-discipline/SKILL.md",
+      "tags": [
+        "craft",
+        "constraints",
+        "rigor"
+      ],
+      "meta_phase": "craft",
+      "sha256": "bae7fd10357dd11b1e4be960d539df35137143b3e20ef0c20fa43eeea9e8d614"
+    },
+    {
+      "slug": "marker-uniqueness-generation",
+      "title": "Marker Uniqueness Generation",
+      "path": "skills/marker-uniqueness-generation/SKILL.md",
+      "tags": [
+        "markers",
+        "craft",
+        "records"
+      ],
+      "meta_phase": "craft",
+      "sha256": "7682236eb9213e644041f2c21491b6ca61396fadabdfb8d2cd5d88b424061739"
+    },
+    {
+      "slug": "reviewer-legible-payload-authoring",
+      "title": "Reviewer Legible Payload Authoring",
+      "path": "skills/reviewer-legible-payload-authoring/SKILL.md",
+      "tags": [
+        "craft",
+        "writing",
+        "evidence"
+      ],
+      "meta_phase": "craft",
+      "sha256": "121f477b59283f6d98d3ef070b070261b2b6c243213dff9a0b59484ae2543663"
+    },
+    {
+      "slug": "payload-self-validation",
+      "title": "Payload Self Validation",
+      "path": "skills/payload-self-validation/SKILL.md",
+      "tags": [
+        "craft",
+        "validation",
+        "rigor"
+      ],
+      "meta_phase": "craft",
+      "sha256": "09eb93d9159c85b813e99a79b2a5f335c482b1d1f969b7af6da7c34b1ec4c7f8"
+    },
+    {
+      "slug": "injection-point-selection",
+      "title": "Injection Point Selection",
+      "path": "skills/injection-point-selection/SKILL.md",
+      "tags": [
+        "deliver",
+        "craft",
+        "recon"
+      ],
+      "meta_phase": "deliver",
+      "sha256": "68b5c6f83b76244c90c924285786aa67a188a48dd94814bdffb37e92443d67fd"
+    },
+    {
+      "slug": "control-and-test-pairing",
+      "title": "Control and Test Pairing",
+      "path": "skills/control-and-test-pairing/SKILL.md",
+      "tags": [
+        "deliver",
+        "evidence",
+        "rigor"
+      ],
+      "meta_phase": "deliver",
+      "sha256": "bef31804de11c8b3e0bc12d152f7bd61baff609d56cc21146c4c71c2d59b62e2"
+    },
+    {
+      "slug": "parameter-channel-routing",
+      "title": "Parameter Channel Routing",
+      "path": "skills/parameter-channel-routing/SKILL.md",
+      "tags": [
+        "deliver",
+        "recon",
+        "context"
+      ],
+      "meta_phase": "deliver",
+      "sha256": "641993360982fe4b48f7bc207a5918120bf65c59447619fd693b925a3f72585a"
+    },
+    {
+      "slug": "content-type-framing-for-tests",
+      "title": "Content Type Framing for Tests",
+      "path": "skills/content-type-framing-for-tests/SKILL.md",
+      "tags": [
+        "deliver",
+        "context",
+        "craft"
+      ],
+      "meta_phase": "deliver",
+      "sha256": "58edbb14c5d8bf1471e404001c0367c8cd7d981e91d8d31d33a143771fbdca62"
+    },
+    {
+      "slug": "request-sequence-ordering",
+      "title": "Request Sequence Ordering",
+      "path": "skills/request-sequence-ordering/SKILL.md",
+      "tags": [
+        "deliver",
+        "sequence",
+        "rigor"
+      ],
+      "meta_phase": "deliver",
+      "sha256": "4addf3f0fbbe1b0395ed4fadced5e2d4ab00f13839d4f2842c705056fed4b311"
+    },
+    {
+      "slug": "delivery-rate-discipline",
+      "title": "Delivery Rate Discipline",
+      "path": "skills/delivery-rate-discipline/SKILL.md",
+      "tags": [
+        "deliver",
+        "safety",
+        "rigor"
+      ],
+      "meta_phase": "deliver",
+      "sha256": "445568b96fc98104e969ac0b67ea3efbb88eff4d69b424f63be79da3a9c0c2fc"
+    },
+    {
+      "slug": "session-state-hygiene-during-tests",
+      "title": "Session State Hygiene During Tests",
+      "path": "skills/session-state-hygiene-during-tests/SKILL.md",
+      "tags": [
+        "deliver",
+        "setup",
+        "rigor"
+      ],
+      "meta_phase": "deliver",
+      "sha256": "6c0a7eb36eb92e4c85bf961ad86f2b07f292393c8c8f1cd0a318f270f3c6252b"
+    },
+    {
+      "slug": "delivery-failure-diagnosis",
+      "title": "Delivery Failure Diagnosis",
+      "path": "skills/delivery-failure-diagnosis/SKILL.md",
+      "tags": [
+        "deliver",
+        "debugging",
+        "rigor"
+      ],
+      "meta_phase": "deliver",
+      "sha256": "4c7a6fadb31a8495411b71027037a6499a7a7cfb991aabd67edc56c601fd3220"
+    },
+    {
+      "slug": "response-diff-observation",
+      "title": "Response Diff Observation",
+      "path": "skills/response-diff-observation/SKILL.md",
+      "tags": [
+        "observe",
+        "evidence",
+        "diff"
+      ],
+      "meta_phase": "observe",
+      "sha256": "bd1f433e67b998e765bd0870a78128fc0b5f915434acb1d6f54d3f0c0176e4e6"
+    },
+    {
+      "slug": "out-of-band-callback-observation",
+      "title": "Out of Band Callback Observation",
+      "path": "skills/out-of-band-callback-observation/SKILL.md",
+      "tags": [
+        "observe",
+        "evidence",
+        "oast"
+      ],
+      "meta_phase": "observe",
+      "sha256": "f789528698c7d7b5cba3191e6b5398c34635acdb21fbef41bf2137d9ed00b8cf"
+    },
+    {
+      "slug": "reflection-versus-execution-distinction",
+      "title": "Reflection Versus Execution Distinction",
+      "path": "skills/reflection-versus-execution-distinction/SKILL.md",
+      "tags": [
+        "observe",
+        "rigor",
+        "interpretation"
+      ],
+      "meta_phase": "observe",
+      "sha256": "cbc739b8db99872a9142736fc7abeec7b3d2fdc2a18fd32c108aff24a08bf0e3"
+    },
+    {
+      "slug": "error-message-interpretation",
+      "title": "Error Message Interpretation",
+      "path": "skills/error-message-interpretation/SKILL.md",
+      "tags": [
+        "observe",
+        "debugging",
+        "signals"
+      ],
+      "meta_phase": "observe",
+      "sha256": "d61c5e8f15efeacbe195924ea6d8e6c3a35ff2c324b8b3af1dbc2a730c412ee3"
+    },
+    {
+      "slug": "timing-signal-observation",
+      "title": "Timing Signal Observation",
+      "path": "skills/timing-signal-observation/SKILL.md",
+      "tags": [
+        "observe",
+        "measurement",
+        "rigor"
+      ],
+      "meta_phase": "observe",
+      "sha256": "5e0366114f42d212998b938354a0d70a7fcb3aefe53072ee593508997b9346d5"
+    },
+    {
+      "slug": "side-effect-verification",
+      "title": "Side Effect Verification",
+      "path": "skills/side-effect-verification/SKILL.md",
+      "tags": [
+        "observe",
+        "evidence",
+        "verification"
+      ],
+      "meta_phase": "observe",
+      "sha256": "9f7046f998ba205fc06b47b601d488c841b416ff0f8ec47fce73210a8f3feeb9"
+    },
+    {
+      "slug": "capture-logging-discipline",
+      "title": "Capture Logging Discipline",
+      "path": "skills/capture-logging-discipline/SKILL.md",
+      "tags": [
+        "observe",
+        "evidence",
+        "records"
+      ],
+      "meta_phase": "observe",
+      "sha256": "c386bcc80d5d6022956788ed1e5cda7b4a47d9ada09b14635fd67c20bcf61c3e"
+    },
+    {
+      "slug": "false-positive-refutation",
+      "title": "False Positive Refutation",
+      "path": "skills/false-positive-refutation/SKILL.md",
+      "tags": [
+        "rigor",
+        "observe",
+        "quality"
+      ],
+      "meta_phase": "observe",
+      "sha256": "2ca1406e56076fb7db394f127016f3be61f4e47fb04fe0db8ee6653f85c63ec7"
+    },
+    {
+      "slug": "replay-package-assembly",
+      "title": "Replay Package Assembly",
+      "path": "skills/replay-package-assembly/SKILL.md",
+      "tags": [
+        "report",
+        "evidence",
+        "reproduction"
+      ],
+      "meta_phase": "report",
+      "sha256": "516bbf7e8b778188487365f0b7faf511fd44ea1c5da50f0851a21c60d7fdb6ef"
+    },
+    {
+      "slug": "impact-statement-from-evidence",
+      "title": "Impact Statement From Evidence",
+      "path": "skills/impact-statement-from-evidence/SKILL.md",
+      "tags": [
+        "report",
+        "impact",
+        "rigor"
+      ],
+      "meta_phase": "report",
+      "sha256": "3f064654b5789e2f69dc26c3e92cae34b1207456881976e2140c29baca2082bd"
+    },
+    {
+      "slug": "evidence-redaction-for-sharing",
+      "title": "Evidence Redaction For Sharing",
+      "path": "skills/evidence-redaction-for-sharing/SKILL.md",
+      "tags": [
+        "report",
+        "redaction",
+        "safety"
+      ],
+      "meta_phase": "report",
+      "sha256": "6a702af8249435d2933480f09ee4bf0a02ad0d59e1ed11f8bb193fc308cded40"
+    },
+    {
+      "slug": "severity-mapping-from-proof",
+      "title": "Severity Mapping From Proof",
+      "path": "skills/severity-mapping-from-proof/SKILL.md",
+      "tags": [
+        "report",
+        "severity",
+        "rigor"
+      ],
+      "meta_phase": "report",
+      "sha256": "a393b89aff3da1ed25f36efcb4ae696b532f59ce733d4e81fbd5be2384862b45"
+    },
+    {
+      "slug": "remediation-oriented-framing",
+      "title": "Remediation Oriented Framing",
+      "path": "skills/remediation-oriented-framing/SKILL.md",
+      "tags": [
+        "report",
+        "remediation",
+        "writing"
+      ],
+      "meta_phase": "report",
+      "sha256": "441984a5e38d266eaa987e10cead44f77e84bbe14591ad445c534c9db7b066b1"
+    },
+    {
+      "slug": "reproducibility-retest-before-submit",
+      "title": "Reproducibility Retest Before Submit",
+      "path": "skills/reproducibility-retest-before-submit/SKILL.md",
+      "tags": [
+        "report",
+        "reproduction",
+        "quality"
+      ],
+      "meta_phase": "report",
+      "sha256": "1710ba14498d25d9434fc6ca607eea4a3bd6172121330bbb12df5f661d3f4fa2"
+    },
+    {
+      "slug": "blind-reviewer-walkthrough",
+      "title": "Blind Reviewer Walkthrough",
+      "path": "skills/blind-reviewer-walkthrough/SKILL.md",
+      "tags": [
+        "report",
+        "quality",
+        "writing"
+      ],
+      "meta_phase": "report",
+      "sha256": "3349d6eb896c4655791f858f142bcc76baeebf006381011a5fbe1b16c19929da"
+    },
+    {
+      "slug": "finding-evidence-indexing",
+      "title": "Finding Evidence Indexing",
+      "path": "skills/finding-evidence-indexing/SKILL.md",
+      "tags": [
+        "report",
+        "evidence",
+        "records"
+      ],
+      "meta_phase": "report",
+      "sha256": "f6b134992c6f9041df9c248f435d1349b85b693cd2f990bd6da4ebf401da109b"
+    },
+    {
+      "slug": "cleanup-and-restoration-verification",
+      "title": "Cleanup and Restoration Verification",
+      "path": "skills/cleanup-and-restoration-verification/SKILL.md",
+      "tags": [
+        "report",
+        "safety",
+        "records"
+      ],
+      "meta_phase": "report",
+      "sha256": "3be9c769b86589bbdac61f8b180cd4e0f27f4eb9adb9058f7f050fc5962531a4"
+    }
+  ]
+}
